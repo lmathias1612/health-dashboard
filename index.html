@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Autonomic Health Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+      background: #0a0e17;
+      color: #c8cdd8;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .grain {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 128px 128px;
+    }
+
+    .container {
+      position: relative; z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(56, 189, 148, 0.08);
+      border: 1px solid rgba(56, 189, 148, 0.2);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #38bd94;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 32px;
+    }
+
+    .badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: #38bd94;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 600;
+      color: #eef0f4;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: #6b7280;
+      margin-bottom: 56px;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #eef0f4;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 12px 0 16px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #38bd94;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+    }
+
+    .highlight {
+      background: rgba(56, 189, 148, 0.06);
+      border-left: 3px solid #38bd94;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+      font-size: 15px;
+    }
+
+    a {
+      color: #38bd94;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(56, 189, 148, 0.3);
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: #38bd94; }
+
+    .footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 13px;
+      color: #4b5563;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .footer span { color: #6b7280; }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="container">
+
+    <div class="badge">Privacy Policy</div>
+    <h1>Autonomic Health Dashboard</h1>
+    <p class="subtitle">Last updated: March 2026</p>
+
+    <div class="section">
+      <h2>What This App Does</h2>
+      <p>The Autonomic Health Dashboard is a personal health monitoring tool that connects to your Whoop wearable to visualize biometric trends and help you identify recovery patterns. It is designed for individual, personal use.</p>
+    </div>
+
+    <div class="section">
+      <h2>Data We Access</h2>
+      <p>When you connect your Whoop account, the app requests read-only access to:</p>
+      <ul>
+        <li>Recovery data (HRV, resting heart rate, SpO2, skin temperature)</li>
+        <li>Sleep data (sleep stages, respiratory rate, sleep performance)</li>
+        <li>Workout data (strain scores, activity type and duration)</li>
+        <li>Basic profile information (for personalization only)</li>
+      </ul>
+      <p>You may also manually enter additional data such as symptom check-ins, subjective wellness scores, and blood test results. This data is entered voluntarily at your discretion.</p>
+    </div>
+
+    <div class="section">
+      <h2>How Your Data Is Stored</h2>
+      <div class="highlight">
+        All health data is stored locally on your device only. Nothing is transmitted to external servers, cloud databases, or third parties.
+      </div>
+      <p>The app uses your browser's local storage (IndexedDB) to keep your data on your machine. Your Whoop API credentials are stored in a local environment file and are never embedded in client-side code or transmitted elsewhere.</p>
+    </div>
+
+    <div class="section">
+      <h2>Data We Do NOT Collect</h2>
+      <p>This application does not collect, store, or transmit:</p>
+      <ul>
+        <li>Analytics, usage tracking, or telemetry of any kind</li>
+        <li>Advertising identifiers or marketing data</li>
+        <li>Personal information beyond what you explicitly enter</li>
+        <li>Location data, contacts, or device information</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Third-Party Services</h2>
+      <p>The app connects to the Whoop API (api.prod.whoop.com) solely to retrieve your biometric data. This connection is governed by <a href="https://www.whoop.com/privacy/" target="_blank" rel="noopener">Whoop's own privacy policy</a>. No other third-party services receive your data.</p>
+      <p>If future integrations are added (such as Google Health Connect or Apple HealthKit), this policy will be updated before any new data connections are established.</p>
+    </div>
+
+    <div class="section">
+      <h2>Your Rights & Control</h2>
+      <p>You have full control over your data at all times:</p>
+      <ul>
+        <li>Export all your data as CSV or JSON at any time via the app's settings</li>
+        <li>Delete all stored data by clearing your browser's local storage or using the in-app reset function</li>
+        <li>Revoke Whoop API access at any time through your Whoop account settings</li>
+        <li>The app functions with whatever scope of data you choose to provide</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Data Security</h2>
+      <p>All communication with the Whoop API occurs over HTTPS. Since data is stored locally on your device, its security depends on your device's own protections (screen lock, disk encryption, browser security). We recommend keeping your device and browser up to date.</p>
+    </div>
+
+    <div class="section">
+      <h2>Changes to This Policy</h2>
+      <p>If the app's data handling practices change — particularly if a server-side component or additional integrations are introduced — this policy will be updated with a new revision date. Continued use after changes constitutes acceptance.</p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>For questions about this privacy policy or your data, reach out at: <a href="mailto:lorenzo.mathias@gmx.de">lorenzo.mathias@gmx.de</a></p>
+    </div>
+
+    <div class="footer">
+      <span>Autonomic Health Dashboard</span> · Privacy-first by design · v1.0
+    </div>
+
+  </div>
+</body>
+</html>
